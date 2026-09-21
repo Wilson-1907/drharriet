@@ -5,6 +5,7 @@ import { SkipLink } from "@/components/navigation/skip-link";
 import { SiteHeader } from "@/components/navigation/site-header";
 import { SiteFooter } from "@/components/navigation/site-footer";
 import { FloatingContact } from "@/components/contact/floating-contact";
+import { ScrollProgress } from "@/components/navigation/scroll-progress";
 import { profile } from "@/data/profile";
 import {
   organizationJsonLd,
@@ -111,6 +112,7 @@ export default function RootLayout({
           </main>
           <SiteFooter />
           <FloatingContact />
+          <ScrollProgress />
         </ThemeProvider>
       </body>
     </html>
