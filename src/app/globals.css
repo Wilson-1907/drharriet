@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Brand black (--void) NEVER flips in dark mode.
+  Page text (--ink) flips. This prevents white-on-white
+  when dark scholarly sections use black backgrounds.
+*/
+:root {
+  --paper: #f7f5f1;
+  --paper-soft: #efebe4;
+  --ink: #111111;
+  --ink-muted: #3f3f3f;
+  --void: #0a0a0a;
+  --on-void: #f7f5f1;
+  --charcoal: #1a1a1a;
+  --line: #d9d3c8;
+  --accent: #8b1e2d;
+  --accent-deep: #6f1623;
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+.dark {
+  --paper: #0c0c0c;
+  --paper-soft: #141414;
+  --ink: #f2efe8;
+  --ink-muted: #c4c0b8;
+  --void: #050505;
+  --on-void: #f2efe8;
+  --charcoal: #121212;
+  --line: #2e2e2e;
+  --accent: #c44555;
+  --accent-deep: #8b1e2d;
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-paper-soft: var(--paper-soft);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-void: var(--void);
+  --color-on-void: var(--on-void);
+  --color-charcoal: var(--charcoal);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-cormorant);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-manrope), system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+    min-width: 0;
+  }
+
+  img,
+  video,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--accent) 28%, transparent);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  input,
+  select,
+  textarea {
+    color: var(--ink);
+    background-color: var(--paper-soft);
+    font-size: 16px; /* prevents iOS zoom on focus */
+  }
+
+  option {
+    color: var(--ink);
+    background-color: var(--paper);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-cormorant), "Times New Roman", serif;
+  }
+
+  .font-sans {
+    font-family: var(--font-manrope), system-ui, sans-serif;
+  }
+
+  .photo-mono img,
+  .photo-mono {
+    filter: grayscale(1) contrast(1.08);
+  }
+
+  .section-pad {
+    padding-block: clamp(3rem, 6vw, 7rem);
+  }
+
+  .container-pad {
+    padding-inline: clamp(1rem, 4vw, 2rem);
+  }
+
+  .safe-bottom {
+    bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .safe-right {
+    right: calc(1rem + env(safe-area-inset-right, 0px));
+  }
+
+  .reveal-base {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-base {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .hero-line,
+    .hero-line-rule,
+    .hero-fade,
+    .hero-portrait {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-line-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-line {
+  animation: hero-rise 0.8s ease both;
+}
+
+.hero-line-delay {
+  animation-delay: 0.12s;
+}
+
+.hero-line-rule {
+  animation: hero-line-grow 0.7s ease 0.35s both;
+}
+
+.hero-fade {
+  animation: hero-fade-in 0.8s ease 0.45s both;
+}
+
+.hero-fade-delay {
+  animation-delay: 0.55s;
+}
+
+.hero-fade-delay-2 {
+  animation-delay: 0.65s;
+}
+
+.hero-portrait {
+  animation: hero-fade-in 1s ease 0.25s both;
+}

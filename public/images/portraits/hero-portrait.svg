@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Hero portrait placeholder</title>
+  <desc id="desc">Replace with a professional portrait of Dr. Harriet Loice Tsinale</desc>
+  <rect width="900" height="1200" fill="#1a1a1a"/>
+  <rect x="40" y="40" width="820" height="1120" fill="none" stroke="#8B1E2D" stroke-width="1" opacity="0.6"/>
+  <circle cx="450" cy="420" r="140" fill="#2a2a2a"/>
+  <rect x="260" y="620" width="380" height="320" rx="8" fill="#2a2a2a"/>
+  <text x="450" y="1020" text-anchor="middle" fill="#f5f5f5" font-family="Georgia, serif" font-size="28">PHOTO 01</text>
+  <text x="450" y="1060" text-anchor="middle" fill="#a3a3a3" font-family="Arial, sans-serif" font-size="16">HERO PORTRAIT  REPLACE</text>
+</svg>
