@@ -48,8 +48,8 @@ export function ScrollProgress() {
     <div
       className={cn(
         "fixed z-[55] flex flex-col items-center gap-2 transition-all duration-300",
-        "left-[calc(0.75rem+env(safe-area-inset-left,0px))] bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))]",
-        "sm:left-[calc(1rem+env(safe-area-inset-left,0px))]",
+        "right-[calc(0.75rem+env(safe-area-inset-right,0px))] bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))]",
+        "sm:right-[calc(1rem+env(safe-area-inset-right,0px))]",
         visible
           ? "pointer-events-auto translate-y-0 opacity-100"
           : "pointer-events-none translate-y-3 opacity-0",

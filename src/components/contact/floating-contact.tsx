@@ -49,7 +49,7 @@ export function FloatingContact() {
   return (
     <nav
       aria-label="Quick contact"
-      className="fixed z-[60] flex flex-col items-center gap-3 safe-right safe-bottom"
+      className="fixed z-[60] flex flex-col items-center gap-3 left-[calc(0.75rem+env(safe-area-inset-left,0px))] bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))] sm:left-[calc(1rem+env(safe-area-inset-left,0px))]"
     >
       {actions.map((action) => {
         const Icon = action.icon;

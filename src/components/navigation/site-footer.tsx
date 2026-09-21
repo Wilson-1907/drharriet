@@ -14,8 +14,6 @@ export function SiteFooter() {
             Director, ODeL &amp; Lecturer in Computing
             <br />
             Karatina University
-            <br />
-            Director, ODeL (Part-time) · Murang&apos;a University of Technology
           </p>
         </div>
 
