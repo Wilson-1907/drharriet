@@ -45,11 +45,25 @@ export const metadata: Metadata = {
     siteName: profile.fullName,
     title: profile.site.title,
     description: profile.site.description,
+    images: [
+      {
+        url: "/images/photo1.jpeg",
+        width: 800,
+        height: 1000,
+        alt: profile.fullName,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: profile.site.title,
     description: profile.site.description,
+    images: ["/images/photo1.jpeg"],
+  },
+  icons: {
+    icon: [{ url: "/images/photo1.jpeg", type: "image/jpeg" }],
+    apple: [{ url: "/images/photo1.jpeg", type: "image/jpeg" }],
+    shortcut: ["/images/photo1.jpeg"],
   },
   robots: {
     index: true,

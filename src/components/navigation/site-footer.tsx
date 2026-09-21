@@ -66,12 +66,23 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-on-void/15">
-        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 font-sans text-xs text-on-void/50 md:flex-row md:items-center md:justify-between md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 font-sans text-xs text-on-void/50 md:flex-row md:items-center md:justify-between md:px-8">
           <p>
             © {new Date().getFullYear()} {profile.fullName}
           </p>
           <p className="tracking-[0.16em] uppercase">
             Computing · Research · Teaching · ODeL Leadership
+          </p>
+          <p>
+            Built by{" "}
+            <a
+              href="https://techflare-solution.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-on-void/75 transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Techflare Solution
+            </a>
           </p>
         </div>
       </div>
