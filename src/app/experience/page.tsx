@@ -7,7 +7,7 @@ import { images } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description: `Professional experience of ${profile.fullName} — Director of ODeL and Lecturer in Computing at Karatina University; part-time Director of ODeL at Murang'a University of Technology.`,
+  description: `Professional experience of ${profile.fullName} — Director of ODeL and Lecturer in Computing at Karatina University; Lecturer at Murang'a University of Technology.`,
   alternates: { canonical: "/experience" },
 };
 
@@ -25,9 +25,9 @@ export default function ExperiencePage() {
             </h1>
             <p className="mt-5 max-w-2xl font-sans text-base text-ink-muted">
               Current emphasis: Director of ODeL and active Lecturer in Computing
-              at Karatina University, plus part-time Director of ODeL at
-              Murang&apos;a University of Technology. Head of Department,
-              Computing is presented as a former role.
+              at Karatina University, and Lecturer at Murang&apos;a University of
+              Technology. Head of Department, Computing is presented as a former
+              role.
             </p>
           </div>
           <div>

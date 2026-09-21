@@ -40,9 +40,8 @@ export const experience: ExperienceEntry[] = [
     category: "academic",
     roles: [
       {
-        title: "Director, Open, Distance and E-Learning",
+        title: "Lecturer",
         status: "current",
-        note: "Part-time",
       },
     ],
   },
@@ -153,10 +152,9 @@ export const careerTimeline: TimelineStage[] = [
     isHighlight: true,
   },
   {
-    id: "muranga-odel",
+    id: "muranga-lecturer",
     organization: "Murang'a University of Technology",
-    role: "Director, ODeL (Part-time)",
+    role: "Lecturer",
     isCurrent: true,
-    isHighlight: true,
   },
 ];

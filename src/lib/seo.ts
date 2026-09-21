@@ -16,7 +16,7 @@ export function personJsonLd() {
     jobTitle: [
       "Director, Open, Distance and E-Learning (ODeL)",
       "Lecturer in Computing",
-      "Director, Open, Distance and E-Learning (ODeL) — Part-time, Murang'a University of Technology",
+      "Lecturer, Murang'a University of Technology",
     ],
     worksFor: {
       "@type": "EducationalOrganization",

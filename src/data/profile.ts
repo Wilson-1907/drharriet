@@ -18,10 +18,9 @@ export const profile = {
       note: "Actively teaching",
     },
     {
-      title: "Director, Open, Distance and E-Learning (ODeL)",
+      title: "Lecturer",
       institution: "Murang'a University of Technology",
       emphasis: "secondary" as const,
-      note: "Part-time",
     },
   ],
   previousLeadership: {
@@ -44,7 +43,7 @@ export const profile = {
     },
     {
       name: "Murang'a University of Technology",
-      roles: ["Director, Open, Distance and E-Learning (ODeL) — Part-time"],
+      roles: ["Lecturer"],
     },
   ],
   location: "Kenya",
@@ -60,7 +59,7 @@ export const profile = {
     opening:
       "Dr. Harriet Loice Tsinale is a Kenyan academic, researcher and university leader whose career bridges computing practice, classroom teaching, scholarly research and institutional digital-education leadership. With over ten years in higher education, she is known for combining technical depth with academic administration and quality assurance in Computer Science and Information Technology.",
     current:
-      "She currently serves at Karatina University as Director, Open, Distance and E-Learning (ODeL) and as Lecturer in Computing — actively teaching while leading digital and distance education. She also serves part-time as Director of ODeL at Murang'a University of Technology, extending her leadership in open, blended and technology-enabled learning across institutions. She was appointed Chair of the Academic Review Panel for the Bachelor of Science (Honours) in Human Computer Interaction at the Namibia University of Science and Technology, under the auspices of the National Council for Higher Education (NCHE), Namibia.",
+      "She currently serves at Karatina University as Director, Open, Distance and E-Learning (ODeL) and as Lecturer in Computing — actively teaching while leading digital and distance education. She also serves as a Lecturer at Murang'a University of Technology. She was appointed Chair of the Academic Review Panel for the Bachelor of Science (Honours) in Human Computer Interaction at the Namibia University of Science and Technology, under the auspices of the National Council for Higher Education (NCHE), Namibia.",
     institutions: [
       "Karatina University",
       "Murang'a University of Technology",
@@ -78,7 +77,7 @@ export const profile = {
     { label: "MSc", value: "Information Technology" },
     { label: "BSc", value: "Computer Science" },
     { label: "TEACHING", value: "Lecturer in Computing" },
-    { label: "LEADERSHIP", value: "Director, ODeL — Karatina & Murang'a (PT)" },
+    { label: "LEADERSHIP", value: "Director, ODeL — Karatina University" },
   ],
   contact: {
     primaryEmail: "htsinale@karu.ac.ke",
@@ -100,7 +99,7 @@ export const profile = {
     title:
       "Dr. Harriet Loice Tsinale | Director of ODeL & Lecturer in Computing",
     description:
-      "Dr. Harriet Loice Tsinale — Director of Open, Distance and E-Learning (ODeL) and Lecturer in Computing at Karatina University; part-time Director of ODeL at Murang'a University of Technology. Research across AI, cybersecurity, human-centered computing and digital education.",
+      "Dr. Harriet Loice Tsinale — Director of Open, Distance and E-Learning (ODeL) and Lecturer in Computing at Karatina University; Lecturer at Murang'a University of Technology. Research across AI, cybersecurity, human-centered computing and digital education.",
     keywords: [
       "Dr. Harriet Loice Tsinale",
       "Karatina University",

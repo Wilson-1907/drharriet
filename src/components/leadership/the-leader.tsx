@@ -108,7 +108,7 @@ export function TheLeader() {
           <Reveal delay={80}>
             <article className="h-full border border-on-void/25 p-6 md:p-7">
               <p className="font-sans text-[0.62rem] tracking-[0.24em] text-accent uppercase">
-                Current · Part-time
+                Current · Murang&apos;a
               </p>
               <h3 className="mt-3 font-display text-2xl text-on-void md:text-3xl">
                 {leadership.currentPartTime.title}
@@ -117,8 +117,6 @@ export function TheLeader() {
                 {leadership.currentPartTime.fullTitle}
                 <br />
                 {leadership.currentPartTime.institution}
-                <br />
-                <span className="text-accent">{leadership.currentPartTime.note}</span>
               </p>
             </article>
           </Reveal>

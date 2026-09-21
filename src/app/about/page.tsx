@@ -8,7 +8,7 @@ import { ButtonLink } from "@/components/ui/button-link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `Biography of ${profile.fullName} — Director of ODeL and Lecturer in Computing at Karatina University; part-time Director of ODeL at Murang'a University of Technology.`,
+  description: `Biography of ${profile.fullName} — Director of ODeL and Lecturer in Computing at Karatina University; Lecturer at Murang'a University of Technology.`,
   alternates: { canonical: "/about" },
 };
 
@@ -98,12 +98,10 @@ export default function AboutPage() {
                 {profile.institution.department}
               </p>
               <h2 className="mt-8 font-sans text-[0.65rem] tracking-[0.22em] text-accent uppercase">
-                Part-time affiliation
+                Also affiliated
               </h2>
               <p className="mt-3 text-ink">Murang&apos;a University of Technology</p>
-              <p className="text-sm text-ink-muted">
-                Director, Open, Distance and E-Learning (ODeL)
-              </p>
+              <p className="text-sm text-ink-muted">Lecturer</p>
             </div>
           </div>
 

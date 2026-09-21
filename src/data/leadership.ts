@@ -13,11 +13,10 @@ export const leadership = {
     note: "Actively teaching",
   },
   currentPartTime: {
-    title: "Director, ODeL",
-    fullTitle: "Director, Open, Distance and E-Learning",
+    title: "Lecturer",
+    fullTitle: "Lecturer",
     institution: "Murang'a University of Technology",
     status: "current" as const,
-    note: "Part-time",
   },
   previous: {
     title: "Head of Department, Computing",

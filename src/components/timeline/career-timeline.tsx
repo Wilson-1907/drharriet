@@ -118,9 +118,9 @@ export function CareerTimeline() {
                 </p>
                 {careerTimeline[active]?.isCurrent ? (
                   <p className="mt-4 border-t border-line pt-4 font-sans text-sm leading-relaxed text-ink">
-                    Current chapter: directing ODeL, continuing as Lecturer in
-                    Computing at Karatina University, and serving part-time as
-                    Director of ODeL at Murang&apos;a University of Technology.
+                    Current chapter: directing ODeL and continuing as Lecturer in
+                    Computing at Karatina University, and serving as Lecturer at
+                    Murang&apos;a University of Technology.
                   </p>
                 ) : null}
               </div>

@@ -109,10 +109,10 @@ export function ContactSection() {
               </div>
               <div>
                 <dt className="font-sans text-[0.62rem] tracking-[0.2em] text-accent uppercase">
-                  Part-time
+                  Also affiliated
                 </dt>
                 <dd className="mt-2 font-sans text-base text-on-void/85">
-                  Director, ODeL · Murang&apos;a University of Technology
+                  Lecturer · Murang&apos;a University of Technology
                 </dd>
               </div>
               <div className="border-t border-on-void/15 pt-5">
