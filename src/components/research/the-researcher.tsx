@@ -12,8 +12,6 @@ import { SectionLabel } from "@/components/ui/section-label";
 import { Reveal } from "@/components/ui/reveal";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import Image from "next/image";
-import { images } from "@/data/images";
 
 const nodePositions: Record<ResearchThemeId, { x: number; y: number }> = {
   ai: { x: 50, y: 12 },
@@ -46,30 +44,15 @@ export function TheResearcher() {
       className="bg-paper-soft"
     >
       <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.7fr]">
-          <Reveal>
-            <SectionLabel number="02" label="The Researcher" />
-            <h2
-              id="researcher-heading"
-              className="mt-5 max-w-2xl font-display text-[clamp(1.85rem,5.5vw,3rem)] leading-tight text-ink md:text-5xl"
-            >
-              Research at the intersection of technology, people and systems.
-            </h2>
-          </Reveal>
-          <Reveal delay={80}>
-            <div className="relative aspect-[5/3] overflow-hidden bg-void/5">
-              <div className="photo-mono relative h-full w-full">
-                <Image
-                  src={images.photo6.src}
-                  alt={images.photo6.alt}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 35vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </Reveal>
-        </div>
+        <Reveal>
+          <SectionLabel number="02" label="The Researcher" />
+          <h2
+            id="researcher-heading"
+            className="mt-5 max-w-2xl font-display text-[clamp(1.85rem,5.5vw,3rem)] leading-tight text-ink md:text-5xl"
+          >
+            Research at the intersection of technology, people and systems.
+          </h2>
+        </Reveal>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
           {/* Desktop constellation */}

@@ -7,6 +7,5 @@ export const credentials = {
     title: "Cisco Instructor — 5 Years of Service",
     issued: "January 2026",
     note: "Verified instructor service recognition.",
-    imagePath: "/images/photo9.jpeg",
   },
 } as const;

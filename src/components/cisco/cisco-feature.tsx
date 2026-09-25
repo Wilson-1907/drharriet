@@ -16,16 +16,13 @@ export function CiscoFeature() {
         <Reveal>
           <div className="relative aspect-[5/4] overflow-hidden bg-charcoal">
             <Image
-              src={images.photo4.src}
-              alt={images.photo4.alt}
+              src={images.photo3.src}
+              alt={images.photo3.alt}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
-          <p className="mt-3 font-sans text-[0.62rem] tracking-[0.2em] text-on-void/55 uppercase">
-            {images.photo4.label}
-          </p>
         </Reveal>
 
         <Reveal delay={80}>
@@ -45,19 +42,6 @@ export function CiscoFeature() {
           </p>
           <p className="mt-6 max-w-md font-sans text-sm leading-relaxed text-on-void/75">
             {cisco.note}
-          </p>
-
-          <div className="relative mt-8 h-48 w-36 overflow-hidden border border-on-void/20 bg-charcoal">
-            <Image
-              src={images.photo9.src}
-              alt={images.photo9.alt}
-              fill
-              sizes="144px"
-              className="object-cover"
-            />
-          </div>
-          <p className="mt-2 font-sans text-[0.62rem] tracking-[0.2em] text-on-void/55 uppercase">
-            {images.photo9.label}
           </p>
         </Reveal>
       </div>

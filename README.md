@@ -27,9 +27,7 @@ npm start
 
 ## Adding photographs
 
-See **[PHOTOS.md](./PHOTOS.md)** for the exact `photo1`–`photo10` placement map.
-
-Quick version: drop files into `public/images/photo1.jpg` … `photo10.jpg`, then update extensions in `src/data/images.ts`.
+See **[PHOTOS.md](./PHOTOS.md)** for the four photo slots: photo1 (hero), photo2 (academic), photo3 (Cisco), photo4 (Namibia).
 
 ## Content integrity
 

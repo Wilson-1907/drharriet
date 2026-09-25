@@ -60,36 +60,17 @@ export function NcheAppointment() {
           </Reveal>
 
           <Reveal delay={80}>
-            <div className="grid grid-cols-1 gap-5 min-[480px]:grid-cols-2">
-              <figure className="min-w-0">
-                <div className="relative aspect-[4/5] overflow-hidden bg-paper">
-                  <Image
-                    src={images.photo11.src}
-                    alt={images.photo11.alt}
-                    fill
-                    sizes="(max-width: 479px) 100vw, (max-width: 1024px) 50vw, 30vw"
-                    className="object-cover object-center"
-                  />
-                </div>
-                <figcaption className="mt-3 font-sans text-[0.62rem] tracking-[0.2em] text-ink-muted uppercase">
-                  {images.photo11.label}
-                </figcaption>
-              </figure>
-              <figure className="min-w-0">
-                <div className="relative aspect-[4/5] overflow-hidden bg-paper">
-                  <Image
-                    src={images.photo12.src}
-                    alt={images.photo12.alt}
-                    fill
-                    sizes="(max-width: 479px) 100vw, (max-width: 1024px) 50vw, 30vw"
-                    className="object-cover object-center"
-                  />
-                </div>
-                <figcaption className="mt-3 font-sans text-[0.62rem] tracking-[0.2em] text-ink-muted uppercase">
-                  {images.photo12.label}
-                </figcaption>
-              </figure>
-            </div>
+            <figure className="min-w-0">
+              <div className="relative aspect-[4/5] overflow-hidden bg-paper">
+                <Image
+                  src={images.photo4.src}
+                  alt={images.photo4.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover object-center"
+                />
+              </div>
+            </figure>
           </Reveal>
         </div>
       </div>

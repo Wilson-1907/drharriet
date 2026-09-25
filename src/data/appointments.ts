@@ -17,6 +17,6 @@ export const appointments = {
       "Panel chairmanship under NCHE auspices",
       "Cross-border higher-education engagement",
     ],
-    photos: ["photo11", "photo12"] as const,
+    photos: ["photo4"] as const,
   },
 } as const;

@@ -23,9 +23,6 @@ export function TheAcademic() {
                 className="object-cover"
               />
             </div>
-            <p className="mt-3 font-sans text-[0.62rem] tracking-[0.2em] text-ink-muted uppercase">
-              {images.photo2.label}
-            </p>
           </div>
         </Reveal>
 

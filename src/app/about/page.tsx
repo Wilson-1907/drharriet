@@ -30,35 +30,16 @@ export default function AboutPage() {
       </div>
 
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 min-[390px]:px-5 md:grid-cols-[0.85fr_1.15fr] md:gap-16 md:px-8 md:py-24">
-        <div className="mx-auto w-full max-w-md space-y-8 md:mx-0 md:max-w-none">
-          <div>
-            <div className="relative aspect-[4/5] overflow-hidden bg-paper-soft">
-              <Image
-                src={images.photo2.src}
-                alt={images.photo2.alt}
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 40vw"
-                className="object-cover object-top"
-              />
-            </div>
-            <p className="mt-3 font-sans text-[0.62rem] tracking-[0.2em] text-ink-muted uppercase">
-              {images.photo2.label}
-            </p>
-          </div>
-          <div>
-            <div className="relative aspect-[4/5] overflow-hidden bg-paper-soft">
-              <Image
-                src={images.photo1.src}
-                alt={images.photo1.alt}
-                fill
-                sizes="(max-width: 768px) 100vw, 40vw"
-                className="object-cover object-top"
-              />
-            </div>
-            <p className="mt-3 font-sans text-[0.62rem] tracking-[0.2em] text-ink-muted uppercase">
-              {images.photo1.label}
-            </p>
+        <div className="mx-auto w-full max-w-md md:mx-0 md:max-w-none">
+          <div className="relative aspect-[4/5] overflow-hidden bg-paper-soft">
+            <Image
+              src={images.photo2.src}
+              alt={images.photo2.alt}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover object-top"
+            />
           </div>
         </div>
 

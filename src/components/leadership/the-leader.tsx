@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { odl } from "@/data/odl";
 import { leadership } from "@/data/leadership";
-import { images } from "@/data/images";
 import { SectionLabel } from "@/components/ui/section-label";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -37,40 +35,21 @@ export function TheLeader() {
           </div>
         </Reveal>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-2">
-          <Reveal>
-            <div className="relative aspect-[16/10] overflow-hidden bg-charcoal">
-              <div className="photo-mono relative h-full w-full">
-                <Image
-                  src={images.photo3.src}
-                  alt={images.photo3.alt}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
-                />
+        <Reveal className="mt-14">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {odl.focusAreas.map((area) => (
+              <div
+                key={area}
+                className="border-t border-on-void/20 pt-4 font-sans text-sm text-on-void/85"
+              >
+                {area}
               </div>
-              <p className="absolute bottom-3 left-3 font-sans text-[0.6rem] tracking-[0.18em] text-on-void/70 uppercase">
-                {images.photo3.label}
-              </p>
-            </div>
-          </Reveal>
-
-          <Reveal delay={70}>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {odl.focusAreas.map((area) => (
-                <div
-                  key={area}
-                  className="border-t border-on-void/20 pt-4 font-sans text-sm text-on-void/85"
-                >
-                  {area}
-                </div>
-              ))}
-            </div>
-            <p className="mt-8 font-sans text-xs leading-relaxed text-on-void/50">
-              {odl.disclaimer}
-            </p>
-          </Reveal>
-        </div>
+            ))}
+          </div>
+          <p className="mt-8 font-sans text-xs leading-relaxed text-on-void/50">
+            {odl.disclaimer}
+          </p>
+        </Reveal>
 
         <div className="mt-16 grid gap-6 border-t border-on-void/15 pt-12 sm:grid-cols-2 lg:grid-cols-3">
           <Reveal>

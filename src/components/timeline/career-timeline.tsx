@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { careerTimeline } from "@/data/experience";
-import { images } from "@/data/images";
-import Image from "next/image";
 import { Reveal } from "@/components/ui/reveal";
 import { cn } from "@/lib/utils";
 
@@ -13,10 +11,7 @@ export function CareerTimeline() {
   );
 
   return (
-    <section
-      aria-labelledby="journey-heading"
-      className="bg-paper"
-    >
+    <section aria-labelledby="journey-heading" className="bg-paper">
       <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
         <div className="grid gap-12 lg:grid-cols-[1fr_0.85fr] lg:gap-16">
           <div>
@@ -96,34 +91,23 @@ export function CareerTimeline() {
           </div>
 
           <Reveal delay={100}>
-            <div className="sticky top-28">
-              <div className="relative aspect-[5/4] overflow-hidden bg-paper-soft">
-                <Image
-                  src={images.photo8.src}
-                  alt={images.photo8.alt}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="mt-6 border border-line bg-paper-soft p-6">
-                <p className="font-sans text-[0.62rem] tracking-[0.22em] text-accent uppercase">
-                  Selected stage
+            <div className="sticky top-28 border border-line bg-paper-soft p-6 md:p-8">
+              <p className="font-sans text-[0.62rem] tracking-[0.22em] text-accent uppercase">
+                Selected stage
+              </p>
+              <p className="mt-3 font-display text-2xl text-ink md:text-3xl">
+                {careerTimeline[active]?.organization}
+              </p>
+              <p className="mt-2 font-sans text-sm text-ink-muted">
+                {careerTimeline[active]?.role}
+              </p>
+              {careerTimeline[active]?.isCurrent ? (
+                <p className="mt-4 border-t border-line pt-4 font-sans text-sm leading-relaxed text-ink">
+                  Current chapter: directing ODeL and continuing as Lecturer in
+                  Computing at Karatina University, and serving as Lecturer at
+                  Murang&apos;a University of Technology.
                 </p>
-                <p className="mt-3 font-display text-2xl text-ink">
-                  {careerTimeline[active]?.organization}
-                </p>
-                <p className="mt-2 font-sans text-sm text-ink-muted">
-                  {careerTimeline[active]?.role}
-                </p>
-                {careerTimeline[active]?.isCurrent ? (
-                  <p className="mt-4 border-t border-line pt-4 font-sans text-sm leading-relaxed text-ink">
-                    Current chapter: directing ODeL and continuing as Lecturer in
-                    Computing at Karatina University, and serving as Lecturer at
-                    Murang&apos;a University of Technology.
-                  </p>
-                ) : null}
-              </div>
+              ) : null}
             </div>
           </Reveal>
         </div>
