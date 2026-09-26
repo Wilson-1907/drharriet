@@ -16,7 +16,7 @@ export function Hero() {
         <div className="hero-portrait relative order-1 mx-auto w-full max-w-[280px] min-[390px]:max-w-xs sm:max-w-sm md:order-2 md:mx-0 md:max-w-md md:justify-self-end">
           <div className="absolute -inset-2 border border-on-void/15 sm:-inset-3" aria-hidden="true" />
           <div className="absolute top-0 left-0 h-full w-px bg-accent" aria-hidden="true" />
-          <div className="photo-mono relative aspect-[4/5] overflow-hidden bg-charcoal">
+          <div className="relative aspect-[4/5] overflow-hidden bg-charcoal">
             <Image
               src={images.photo1.src}
               alt={images.photo1.alt}

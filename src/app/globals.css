@@ -117,11 +117,6 @@
     font-family: var(--font-manrope), system-ui, sans-serif;
   }
 
-  .photo-mono img,
-  .photo-mono {
-    filter: grayscale(1) contrast(1.08);
-  }
-
   .section-pad {
     padding-block: clamp(3rem, 6vw, 7rem);
   }
